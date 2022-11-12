@@ -3,7 +3,7 @@
           docker_image:
             name: appfront
             build:
-             path: /var/lib/jenkins/workspace/Projet_CD
+             path: /var/lib/jenkins/workspace/LC
              pull: no
             source: build
             state: present
