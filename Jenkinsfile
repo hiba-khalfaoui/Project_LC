@@ -6,11 +6,20 @@ pipeline
      steps{
       scripts{
            checkout([$class: 'GitSCM' , branches: [[name: '*/master']],
-             userRemoteConfigs: [
-                      git credentialsId: 'github', url: 'https://github.com/hiba-khalfaoui/Project_LC.git']])
+             userRemoteConfigs: [[
+                    git credentialsId: 'github', url: 'https://github.com/hiba-khalfaoui/Project_LC.git' ]]])
                       
           }
          }
         }
-    }
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  }
 }
