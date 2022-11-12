@@ -22,7 +22,7 @@ pipeline {
         stage('Build'){
             steps{
                 script{
-                    sh "ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml"
+                 sh "ANSIBLE_DEBUG=1 ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml -e ansible_become_password=123"
                 }
             }
         }
